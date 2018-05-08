@@ -16,12 +16,12 @@ public class SalvoApplication {
 
 	@Bean
 	public CommandLineRunner initData(PlayerRepository repository) {
-		Player one = new Player("wyll", "ed", "veado");
-		Player two = new Player("wolm", "edy", "veadossauro");
+		Player one = new Player("Wyll", "Gs", "mc");
+
 		return (args) -> {
 			// save players
 			repository.save(one);
-			repository.save(two);
+
 		};
 	}
 

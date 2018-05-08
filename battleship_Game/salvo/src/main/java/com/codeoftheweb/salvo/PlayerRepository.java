@@ -8,6 +8,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 public interface PlayerRepository extends JpaRepository<Player, Long> {
     List<Player> findByLastName(String lastName);
     List<Player> findByUsername(String username);
+    List<Player> findByFirstName(String firstName);
 
 }
 
